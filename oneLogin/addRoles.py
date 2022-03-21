@@ -11,7 +11,7 @@ r = requests.post(
             url="https://api.us.onelogin.com/auth/oauth2/v2/token",
             headers={
                 "Content-Type": "application/json",
-                "Authorization": oneLoginAuth,  # change this to swap between sandbox and prod
+                "Authorization": oneLoginAuth,  
             },
             data=json.dumps({
                 "grant_type": "client_credentials"
