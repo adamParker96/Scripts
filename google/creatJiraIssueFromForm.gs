@@ -5,12 +5,12 @@ function createIssue(e){
 // NOTE: Update the [n] to the cell value in your spreadsheet.
   var auth = [basic_64_conversion_of_username:APIKey_goes_here] //use https://www.base64encode.org/ to encode your username:Api Key
   
-  var subject = e.values[1].toString();
-  var email = e.values[2].toString();
-  var priority = e.values[3].toString();
-  var desc = e.values[4].toString();
+  var subject = e.values[n].toString();
+  var email = e.values[n2].toString();
+  var priority = e.values[n3].toString();
+  var desc = e.values[n4].toString();
   
-  var deadlineArray = e.values[5].split("/"); //have to convert the dates into something jira will like. jira is very picky.
+  var deadlineArray = e.values[n5].split("/"); //have to convert the dates into something jira will like. jira is very picky.
   if (deadlineArray[0].length < 2) {
     deadlineArray[0] = "0"+deadlineArray[0].toString()
   }
